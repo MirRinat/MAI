@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+    <title>Расписание электричек 2021</title>
+
+	<style>
+		body
+        {
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+        .headers div{
+            color: aqua;
+            padding: 10px;
+            margin: 10px;
+            margin-left: ;
+        }
+
+	</style>
+
+
+</head>
+<body bgcolor="#f0f8ff">
+<div class="headers" align="center">
+
+        <h2 align="center">
+            Расписание электричек
+        </h2>
+
+    <div>
+        <input type="text" id="from_station" placeholder="Откуда" style="text-align:center;" list="list_from_station"/>
+        <datalist id="list_from_station">
+            <option>Москва</option>
+            <option>Москва(Киевская)</option>
+            <option>Москва(Казанская)</option>
+            <option>Москва(Курская)</option>
+            <option>Санкт-Петербург</option>
+            <option>Петушки</option>
+            <option>Электрозаводская</option>
+            <option>Сортировочная</option>
+            <option>Авиамоторная (бывш. Новая)</option>
+            <option>Андроновка (бывш. Фрезер)</option>
+            <option>Чухлинка (бывш. Перово)</option>
+            <option>Плющево</option>
+            <option>Вешняки</option>
+            <option>Выхино</option>
+            <option>Косино</option>
+        </datalist>
+        <input type="text" id="to_station" placeholder="Куда" style="text-align:center;" list="list_to_station"/>
+        <datalist id="list_to_station">
+            <option>Москва</option>
+            <option>Москва(Киевская)</option>
+            <option>Москва(Казанская)</option>
+            <option>Москва(Курская)</option>
+            <option>Санкт-Петербург</option>
+            <option>Петушки</option>
+            <option>Электрозаводская</option>
+            <option>Сортировочная</option>
+            <option>Авиамоторная (бывш. Новая)</option>
+            <option>Андроновка (бывш. Фрезер)</option>
+            <option>Чухлинка (бывш. Перово)</option>
+            <option>Плющево</option>
+            <option>Вешняки</option>
+            <option>Выхино</option>
+            <option>Косино</option>
+
+
+        </datalist>
+        <input type="date" id="datee" placeholder="Дата" min='1899-01-01' style="text-align:center;">
+        <input id="generate" type="button" value="Показать расписание" onclick='generate_table(); this.disabled=1'/>
+
+    </div>
+
+
+</div>
+
+</table>
+
+
+	<script type='text/javascript' src='script.js'></script>
+</body>
+</html>
